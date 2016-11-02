@@ -27,7 +27,7 @@
             host : "54.164.14.111",
             key  : "suhas.pem",
             ref  : "origin/master",
-            repo : "ssh://suhas@10.10.35.166/home/suhas/node-sample.git",
+            repo : "git@github.com:suhas-shetty/node-sample.git",
             path : "/home/ec2-user/API_Server_Staging",
             "post-deploy" : "npm install && pm2 startOrRestart ecosystem.json5"
         }
