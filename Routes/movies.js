@@ -63,6 +63,10 @@ module.exports = function(server){
 		});
 	});
 
+	server.get('/test', function(req, res){
+		console.log("Up and running");
+	});
+
 	server.get('/movies/:movieId', function(req, res){
 		var movieId = mongoose.Types.ObjectId(req.params.movieId);
 		console.log("movieId", movieId, "req.params.movieId", req.params.movieId);
